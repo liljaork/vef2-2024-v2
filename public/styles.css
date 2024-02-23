@@ -1,9 +1,13 @@
+/* over all css */
+
 html {
   background-color: #f8f9fa;
 }
 
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -14,6 +18,7 @@ main {
 
 h1 {
   color: #333;
+  margin-top: 0;
 }
 
 p {
@@ -39,13 +44,41 @@ a:hover {
   text-decoration: underline;
 }
 
+/* footer */
+
 footer {
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
+  margin-top: 20px;
 }
 
 footer p {
   color: #868686;
   font-size: 14px;
+}
+
+/* table og svona stuff */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #caaa8f;
+}
+
+tr:hover {
+  background-color: #ddd;
 }
