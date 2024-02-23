@@ -38,3 +38,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #666;
+  font-size: 14px;
+}
