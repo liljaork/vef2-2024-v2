@@ -38,6 +38,7 @@ export async function query(q, values = []) {
   }
 }
 
+// eslint-disable-next-line consistent-return
 export async function getGames() {
   const q = `
     SELECT
@@ -77,10 +78,12 @@ export async function getGames() {
   }
 }
 
+// eslint-disable-next-line camelcase
 export function insertGame(home_name, home_score, away_name, away_score) {
   const q =
     'insert into games (home, away, home_score, away_score) values ($1, $2, $3, $4);';
 
+  // eslint-disable-next-line camelcase
   const result = query(q, [home_name, home_score, away_name, away_score]);
 }
 

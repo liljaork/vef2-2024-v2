@@ -40,6 +40,7 @@ function skraRoute(req, res, next) {
 
 function skraRouteInsert(req, res, next) {
   // TODO mjög hrátt allt saman, vantar validation!
+  // eslint-disable-next-line camelcase
   const { home_name, home_score, away_name, away_score } = req.body;
 
   const result = insertGame(home_name, home_score, away_name, away_score);
