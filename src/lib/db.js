@@ -83,7 +83,7 @@ export function insertGame(home_name, home_score, away_name, away_score) {
   const q =
     'insert into games (home, away, home_score, away_score) values ($1, $2, $3, $4);';
 
-  // eslint-disable-next-line camelcase
+  // eslint-disable-next-line camelcase, no-unused-vars
   const result = query(q, [home_name, home_score, away_name, away_score]);
 }
 

@@ -32,17 +32,20 @@ function ensureLoggedIn(req, res, next) {
   return res.redirect('/login');
 }
 
+// eslint-disable-next-line no-unused-vars
 function skraRoute(req, res, next) {
   return res.render('skra', {
     title: 'Skrá leik',
   });
 }
 
+// eslint-disable-next-line no-unused-vars
 function skraRouteInsert(req, res, next) {
   // TODO mjög hrátt allt saman, vantar validation!
   // eslint-disable-next-line camelcase
   const { home_name, home_score, away_name, away_score } = req.body;
 
+  // eslint-disable-next-line no-unused-vars
   const result = insertGame(home_name, home_score, away_name, away_score);
 
   res.redirect('/leikir');
