@@ -68,7 +68,7 @@ table {
 th, td {
   padding: 8px;
   border-bottom: 1px solid #ddd;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 th {
@@ -76,7 +76,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #caaa8f;
+  background-color: #d6cec7;
 }
 
 tr:hover {
